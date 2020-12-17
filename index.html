@@ -5,14 +5,16 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-    <link rel="stylesheet" href="./styles/styles.css " type="text/css"/>
+    <link rel="stylesheet" href="./styles/main.css " type="text/css"/>
     <link rel="stylesheet" href="./styles/shared.css " type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sushi Bar</title>
   </head>
   <body>
     <nav id="main-nav">
-      <div id="site-logo">寿司</div>
+      <div id="site-logo">
+        <a href="./index.html">寿司</a>
+      </div>
       <ul class="main-nav__links">
         <li class="main-nav__link"><a href="./index.html">home</a></li>
         <li class="main-nav__link"><a href="./menu.html">menu</a></li>
@@ -25,29 +27,31 @@
       </div>
     </header>
     <main>
-      <section>
-        <div>
+      <section class="main-about">
           <h2>O nas</h2>
           <p>text o sushi bar</p>
-          <p>Najlepsze sushi zjesz u nas codziennie:</p>
-          <ul>
-            <li>
+      </section>
+      <section class="main-open">
+        <div class="main-open__schedule">
+          <h2>Najlepsze sushi zjesz u nas codziennie:</h2>
+          <ul class="main-open__schedule-list">
+            <li class="main-open__schedle-list-item">
               <p>Pn - pt: 9:00 - 22:00</p>
             </li>
-            <li>
+            <li class="main-open__schedle-list-item">
               <p>Sobota: 12:00 - 22:00</p>
             </li>
-            <li>
+            <li class="main-open__schedle-list-item">
               <p>Niedziela: 13:00 - 21:00</p>
             </li>
           </ul>
         </div>
       </section>
-      <section>
-        <div>
+      <section class="main-daily">
+        <div class="main-daily__description">
           <h2>Danie dnia</h2>
           <p>opis dania dnia</p>
-          <img src="./img/pexels-matheus-gomes-2451081.jpg" alt="Dzisiejsze danie dnia" />
+          <img src="./img/nick-karvounis-go7FGomRpe8-unsplash.jpg" alt="Dzisiejsze danie dnia" />
         </div>
       </section>
     </main>
