@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Variables and  root styles*/
+:root {
+  font-size: 16px;
+  --primary-bg-color: #0F1999;
+  --primary-bg-color-rgba:rgba(15, 25, 153, .75);
+  --secondary-bg-color: #5BE617;
+  --primary-text-color: #efebe9;
+  --secondary-text-color: #E64600;
+  --logo-color: #5BE617;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Shared styles general */
+
+body {
+  font-family: Poppins, serif;
+  background-color: var(--primary-bg-color);
+  min-width: 30rem;
+  min-height: 50rem;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+a,
+p,
+#site-logo {
+  color: var(--primary-text-color);
+}
+
+/* Main Navigation styles */
+
+#main-nav {
+  position: fixed;
+  top: 0;
+  background-color: var(--primary-bg-color-rgba);
+  width: 100%;
+  min-width: 30rem;
+  height: 8vh;
+  max-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#site-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--logo-color);
+  /* line-height: 3rem; */
+  margin-left: 2rem;
+  align-self: center;
+  cursor: none;
+}
+
+.main-nav__links {
+  display: flex;
+  width: 70vw;
+  min-width: 20rem;
+  font-size: 1.5rem;
+  /* line-height: 3rem; */
+  padding: .5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-nav__link {
+  list-style: none;
+}
+
+.main-nav__link a {
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: bold;
+}
+
+.main-nav__link:hover a,
+.main-nav__link:active a {
+  color: var(--secondary-text-color);
+}
+
+/* Main Header styles */
+
+header {
+  height: 20vh;
+  min-height: 20rem;
+  margin-top: 3rem;
+  background: #1DA33B url('../img/florian-metzner-12IsagncQ7o-unsplash.jpg') no-repeat center top / cover;
+}
+
+.main-header__text-container {
+  padding-top: 10rem;
+}
+
+.main-header__text {
+  display: inline-block;
+  margin-left: 3rem;
+  color: var(--primary-text-color);
+  text-shadow: 0 5px 10px var(--primary-bg-color-rgba);
+  background: var(--primary-bg-color-rgba);
+  padding: .8rem;
+  border-radius: 1rem;
+}
+
+main {
+  height: 66vh;
+}
+
+/* Social media links */
+aside {
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  min-height: 8rem;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+aside li {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+aside li:nth-child(3) {
+  margin-bottom: 0;
+}
+
+aside a {
+  line-height: 2rem;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+aside i {
+  color:var(--secondary-bg-color);
+  transition: all .2s;
+}
+
+aside li:hover a i,
+aside li:active a i {
+  animation: roll ease 1s;
+}
+
+@keyframes roll {
+  0% {
+    /* transform: rotateZ(0deg);
+    filter: hue-rotate(0deg); */
+  }
+  50% {
+    transform: rotateZ(180deg);
+    filter: hue-rotate(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+/* Main footer styles */
+footer {
+  height: 6vh;
+  max-height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid var(--secondary-bg-color);
+}
+
+footer p {
+  font-size: .8rem;
+  line-height: 3rem;
+}
+
+
+
