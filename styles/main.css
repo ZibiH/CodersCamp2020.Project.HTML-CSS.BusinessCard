@@ -1,0 +1,45 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "ab ab ab ab"
+    "sh sh sh sh"
+    "da da da da";
+  width: 80vw;
+  min-height: 42rem;
+  margin: 0 auto;
+  place-items: center center;
+}
+
+.main-about {
+  grid-area: ab;
+  height: 10vh;
+  min-height: 6rem;
+  width: 100%;
+}
+
+.main-open {
+  grid-area: sh;
+  height: 16vh;
+  min-height: 12rem;
+  width: 100%;
+}
+
+.main-daily {
+  grid-area: da;
+  height: 40vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-about h2,
+.main-daily h2,
+.main-open h2 {
+  margin: var(--header-margin-def);
+}
+
+
+
+.main-daily img {
+  max-height: 15rem;
+}
