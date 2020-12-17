@@ -7,21 +7,22 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <link rel="stylesheet" href="./styles/styles.css " type="text/css"/>
     <link rel="stylesheet" href="./styles/shared.css " type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sushi Bar</title>
   </head>
   <body>
-    <nav id="main__nav">
-      <ul>
-        <li><a href="./index.html">home</a></li>
-        <li><a href="./menu.html">menu</a></li>
-        <li><a href="./contact.html">contact</a></li>
+    <nav id="main-nav">
+      <div id="site-logo">寿司</div>
+      <ul class="main-nav__links">
+        <li class="main-nav__link"><a href="./index.html">home</a></li>
+        <li class="main-nav__link"><a href="./menu.html">menu</a></li>
+        <li class="main-nav__link"><a href="./contact.html">contact</a></li>
       </ul>
     </nav>
     <header>
-      <h1>Najlepsze Sushi w Twoim mieście!</h1>
-      <p>
-        Już niebawem nasze Sushi będzie dostępne także w zamówieniach online!
-      </p>
+      <div class="main-header__text-container">
+        <h1 class="main-header__text">Najlepsze Sushi <br>w Twoim mieście!</h1>
+      </div>
     </header>
     <main>
       <section>
@@ -46,19 +47,24 @@
         <div>
           <h2>Danie dnia</h2>
           <p>opis dania dnia</p>
-          <img src="#" alt="Dzisiejsze danie dnia" />
+          <img src="./img/pexels-matheus-gomes-2451081.jpg" alt="Dzisiejsze danie dnia" />
         </div>
       </section>
     </main>
     <aside>
       <ul>
-        <li><a href="#">FB</a></li>
-        <li><a href="#">TT</a></li>
-        <li><a href="#">Instagram</a></li>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
       </ul>
     </aside>
     <footer>
-      <h2>Odwiedź nas!</h2>
+      <div class="main-footer__text">
+        <p>Zapraszamy!</p>
+      </div>
+      <div class="main-footer__copyright">
+        <p>Zbigniew Holak &copy; CodersCamp 2020</p>
+      </div>
     </footer>
   </body>
 </html>
