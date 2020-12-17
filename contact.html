@@ -13,7 +13,9 @@
   </head>
   <body>
     <nav id="main-nav">
-      <div id="site-logo">寿司</div>
+      <div id="site-logo">
+        <a href="./index.html">寿司</a>
+      </div>
       <ul class="main-nav__links">
         <li class="main-nav__link"><a href="./index.html">home</a></li>
         <li class="main-nav__link"><a href="./menu.html">menu</a></li>
@@ -25,7 +27,32 @@
         <h1 class="main-header__text">Najlepsze Sushi <br>w Twoim mieście!</h1>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="contact-form__container">
+        <div class="contact-form__description">
+          <h2>Napisz do nas!</h2>
+          <p>Jeśli masz do nas jakieś pytania lub sugestie - zachecamy do kontakut z nami poprzez formularz poniżej.</p>
+          <p>Odpowiemy tak szybkom jak to możliwe!</p>
+        </div>
+        <form action class="contact-form__form">
+          <div class="contact-form__name">
+            <label for="name">Twoje imię:</label>
+            <br>
+            <input type="text" id="name">
+          </div>
+          <div class="contact-form__email">
+            <label for="email">Twój e-mail:</label>
+            <br>
+            <input type="text" id="email">
+          </div>
+          <div class="contact-form__message">
+            <label for="message">Wiadomość:</label>
+            <br>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+          </div>
+        </form>
+      </div>
+    </main>
     <aside>
       <ul>
         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
