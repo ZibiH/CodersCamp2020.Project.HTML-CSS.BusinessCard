@@ -9,6 +9,7 @@
   --primary-text-color: #efebe9;
   --secondary-text-color: #E64600;
   --logo-color: #5BE617;
+  --header-margin-def: 1rem .5rem 1rem;
 }
 
 /* Reset */
@@ -24,7 +25,7 @@ body {
   font-family: Poppins, serif;
   background-color: var(--primary-bg-color);
   min-width: 30rem;
-  min-height: 50rem;
+  max-height: 50rem;
   overflow-x: hidden;
 }
 
@@ -50,14 +51,13 @@ p,
   justify-content: space-between;
 }
 
-#site-logo {
+#site-logo a{
   font-size: 2rem;
   font-weight: 600;
   color: var(--logo-color);
-  /* line-height: 3rem; */
   margin-left: 2rem;
   align-self: center;
-  cursor: none;
+  cursor: pointer;
 }
 
 .main-nav__links {
@@ -116,7 +116,7 @@ main {
 /* Social media links */
 aside {
   position: fixed;
-  top: 50vh;
+  top: 55vh;
   right: 0;
   min-height: 8rem;
 }
