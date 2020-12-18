@@ -10,6 +10,8 @@ main {
   place-items: center center;
 }
 
+/* Section styles */
+
 .main-about {
   grid-area: ab;
   min-height: 12rem;
@@ -49,6 +51,7 @@ main {
 }
 
 .main-daily img {
-  max-height: 14rem;
+  max-height: 13rem;
   margin-top: 1rem;
+  box-shadow: 3px 5px 5px rgba(0,0,0,.3);
 }

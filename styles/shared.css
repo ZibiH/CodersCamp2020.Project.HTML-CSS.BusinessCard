@@ -25,7 +25,7 @@ body {
   font-family: Poppins, serif;
   background-color: var(--primary-bg-color);
   min-width: 20rem;
-  max-height: 50rem;
+  max-height: 60rem;
   overflow-x: hidden;
 }
 
@@ -58,6 +58,7 @@ p,
   height: 3rem;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--secondary-bg-color);
 }
 
 #site-logo a{
@@ -67,10 +68,6 @@ p,
   margin-left: 1rem;
   align-self: center;
   cursor: pointer;
-}
-
-main {
-  height: 66vh;
 }
 
 .main-nav__links {
@@ -117,7 +114,7 @@ header {
   margin-left: 1rem;
   color: var(--primary-text-color);
   background: var(--primary-bg-color-rgba);
-  padding: .8rem;
+  padding: .5rem;
   border-radius: 1rem;
   font-size: 1.5rem;
 }
