@@ -1,0 +1,47 @@
+main {
+  min-height: 66vh;
+}
+
+/* General menu styles */
+main h2 {
+  display: inline-block;
+  margin: var(--header-margin-def);
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.menu__container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.menu__container h3 {
+  color: var(--secondary-text-color);
+}
+
+.menu__container h4 {
+  margin-top: 1rem;
+}
+
+.menu__container img {
+  max-width: 18rem;
+}
+
+/* Menu display styles */
+
+.menu__item,
+.menu__set {
+  position: relative;
+  z-index: -1;
+  margin-top: 1rem;
+}
+
+.menu__price {
+  position: absolute;
+  display: inline-block;
+  padding: .3rem;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  background-color: var(--primary-bg-color-rgba);
+  border: 1px solid var(--secondary-text-color);
+  border-radius: .3rem;
+}
