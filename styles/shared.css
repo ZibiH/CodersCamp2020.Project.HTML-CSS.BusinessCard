@@ -29,6 +29,16 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: .5rem;
+  background-color: var(--primary-bg-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-bg-color);
+  border-radius: .3rem;
+}
+
 h1,
 h2,
 a,
