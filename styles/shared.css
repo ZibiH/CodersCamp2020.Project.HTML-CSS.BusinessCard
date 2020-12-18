@@ -25,8 +25,16 @@ body {
   font-family: Poppins, serif;
   background-color: var(--primary-bg-color);
   min-width: 20rem;
+  max-width: 75rem;
+  margin: 0 auto;
   max-height: 60rem;
   overflow-x: hidden;
+}
+
+@media (min-width: 1200px) {
+  body {
+    position: relative;
+  }
 }
 
 body::-webkit-scrollbar {
@@ -45,7 +53,7 @@ h3,
 h4,
 a,
 p,
-#site-logo {
+#site-logo a{
   color: var(--primary-text-color);
 }
 
@@ -57,14 +65,15 @@ p,
   background-color: var(--primary-bg-color-rgba);
   width: 100%;
   min-width: 20rem;
+  max-width: 75rem;
   height: 3rem;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--secondary-bg-color);
 }
 
-#site-logo a{
-  font-size: 2rem;
+#site-logo a {
+  font-size: 1.8rem;
   font-weight: 600;
   color: var(--logo-color);
   margin-left: 1rem;
@@ -74,7 +83,7 @@ p,
 
 .main-nav__links {
   display: flex;
-  width: 70vw;
+  width: 70%;
   min-width: 14rem;
   font-size: 1.1rem;
   /* line-height: 3rem; */
@@ -98,6 +107,28 @@ p,
   color: var(--secondary-text-color);
 }
 
+@media (min-width: 480px) {
+  #site-logo a {
+    margin-left: 2rem;
+  }
+
+  .main-nav__links {
+    width: 60%;
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+    #site-logo a {
+      margin-left: 3rem;
+    }
+
+    .main-nav__links {
+      width: 50%;
+      font-size: 1.6rem;
+    }
+}
+
 /* Main Header styles */
 
 header {
@@ -113,12 +144,18 @@ header {
 
 .main-header__text {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 1.2rem;
   color: var(--primary-text-color);
   background: var(--primary-bg-color-rgba);
   padding: .5rem;
   border-radius: 1rem;
   font-size: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .main-header__text {
+    margin-left: 3rem;
+  }
 }
 
 /* Social media links */
@@ -177,19 +214,47 @@ aside li:active a i {
   }
 }
 
+@media (min-width: 1200px) {
+  aside {
+    position: static;
+    min-height: 3rem;
+  }
+
+  aside ul {
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-around;
+    margin: 0 30% 0;
+  }
+
+  aside li {
+    margin: 0;
+  }
+
+  aside a {
+    font-size: 2rem;
+  }
+}
 
 /* Main footer styles */
 footer {
   height: 6vh;
   max-height: 3rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border-top: 2px solid var(--secondary-bg-color);
 }
 
 footer p {
   font-size: .7rem;
   line-height: 3rem;
+  padding: 0 1rem 0;
+}
+
+@media (min-width: 1200px) {
+  footer p {
+    font-size: .9rem;
+  }
 }
 
 
