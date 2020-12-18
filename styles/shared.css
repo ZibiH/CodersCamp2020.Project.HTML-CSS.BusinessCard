@@ -3,12 +3,12 @@
 /* Variables and  root styles*/
 :root {
   font-size: 16px;
-  --primary-bg-color: #0F1999;
-  --primary-bg-color-rgba:rgba(15, 25, 153, .9);
-  --secondary-bg-color: #5BE617;
+  --primary-bg-color: #418EE6;
+  --primary-bg-color-rgba:rgba(65, 142, 230, .9);
+  --secondary-bg-color: #78FFAB;
   --primary-text-color: #efebe9;
-  --secondary-text-color: #E64600;
-  --logo-color: #5BE617;
+  --secondary-text-color: #F58673;
+  --logo-color: #A9FFB3;
   --header-margin-def: 1rem .5rem .5rem;
 }
 
@@ -101,7 +101,7 @@ p,
 
 @media (min-width: 480px) {
   #site-logo a {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
   }
 
   .main-nav__links {
@@ -112,7 +112,7 @@ p,
 
 @media (min-width: 768px) {
     #site-logo a {
-      margin-left: 3rem;
+      margin-left: 4rem;
     }
 
     .main-nav__links {
@@ -135,7 +135,7 @@ header {
 
 .main-header__text {
   display: inline-block;
-  margin-left: 1.2rem;
+  margin-left: 2rem;
   color: var(--primary-text-color);
   background: var(--primary-bg-color-rgba);
   padding: .5rem;
@@ -143,9 +143,27 @@ header {
   font-size: 1.5rem;
 }
 
+@media (min-width: 480px) {
+  .main-header__text {
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header__text {
+    margin-left: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-header__text {
+    margin-left: 6rem;
+  }
+}
+
 @media (min-width: 1200px) {
   .main-header__text {
-    margin-left: 3rem;
+    margin-left: 7rem;
   }
 }
 
