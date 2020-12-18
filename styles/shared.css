@@ -4,7 +4,7 @@
 :root {
   font-size: 16px;
   --primary-bg-color: #0F1999;
-  --primary-bg-color-rgba:rgba(15, 25, 153, .75);
+  --primary-bg-color-rgba:rgba(15, 25, 153, .9);
   --secondary-bg-color: #5BE617;
   --primary-text-color: #efebe9;
   --secondary-text-color: #E64600;
@@ -77,7 +77,7 @@ main {
   display: flex;
   width: 70vw;
   min-width: 14rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   /* line-height: 3rem; */
   padding: .5rem;
   justify-content: space-around;

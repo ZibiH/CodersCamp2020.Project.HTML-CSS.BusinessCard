@@ -3,6 +3,12 @@ main {
 }
 
 .contact-form__container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
+}
+
+.contact-form__description h2{
+  display: inline-block;
+  margin: var(--header-margin-def);
+  border-bottom: 1px solid var(--primary-text-color);
 }

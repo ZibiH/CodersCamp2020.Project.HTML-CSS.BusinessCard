@@ -4,22 +4,20 @@ main {
     "ab ab ab ab"
     "sh sh sh sh"
     "da da da da";
-  width: 80vw;
-  min-height: 47rem;
+  width: 70vw;
+  min-height: 52rem;
   margin: 0 auto;
   place-items: center center;
 }
 
 .main-about {
   grid-area: ab;
-  height: 12vh;
-  min-height: 10rem;
+  min-height: 12rem;
   width: 100%;
 }
 
 .main-open {
   grid-area: sh;
-  height: 14vh;
   min-height: 12rem;
   width: 100%;
 }
@@ -31,8 +29,7 @@ main {
 
 .main-daily {
   grid-area: da;
-  height: 40vh;
-  min-height: 25rem;
+  min-height: 24rem;
   width: 100%;
   overflow: hidden;
 }
@@ -40,6 +37,7 @@ main {
 .main-about h2,
 .main-daily h2,
 .main-open h2 {
+  display: inline-block;
   margin: var(--header-margin-def);
   border-bottom: 1px solid var(--primary-text-color);
 }
@@ -51,6 +49,6 @@ main {
 }
 
 .main-daily img {
-  max-height: 15rem;
+  max-height: 14rem;
   margin-top: 1rem;
 }
