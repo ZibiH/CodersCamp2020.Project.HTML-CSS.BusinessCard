@@ -6,7 +6,6 @@ main {
 .contact-form__container {
   width: 70%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .contact-form__description h2{
@@ -22,6 +21,30 @@ main {
 .contact-form__form {
   margin: var(--header-margin-def);
   min-height: 25rem;
+}
+
+/* Media query */
+
+@media (min-width: 992px) {
+  main {
+    min-height: 40vh;
+  }
+  .contact-form__container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact-form__description,
+  .contact-form__form {
+    width: 50%;
+  }
+
+  .contact-form__description * {
+    text-align: justify;
+  }
+
 }
 
 /* Input styles */

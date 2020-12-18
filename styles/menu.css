@@ -16,6 +16,7 @@ main h2 {
   width: 70%;
   margin: 0 auto;
   font-family: 'Tillana', cursive;
+  text-align: center;
 }
 
 .menu__container h3 {
@@ -27,16 +28,67 @@ main h2 {
 }
 
 .menu__container img {
-  max-width: 18rem;
+  width: 18rem;
+}
+
+/* General media query styles */
+@media (min-width: 768px) {
+  .menu__container {
+    width: 90%;
+  }
+
+  .menu__items {
+    display: grid;
+    grid-template-areas:
+     "mih mih"
+     "mi1 mi2";
+  }
+
+  .menu__items-header {
+    grid-area: mih;
+    width: 100%;
+  }
+
+  .menu__item-grid-one {
+    grid-area: mi1;
+  }
+  .menu__item-grid-two {
+    grid-area: mi2;
+  }
+
+  .menu__item img {
+    height: 25rem;
+  }
+  .menu__sets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .menu__sets-header {
+    grid-row: 1;
+    grid-column: 1 / 3;
+  }
+
+  .menu__set-grid-one {
+    grid-row: 2;
+    grid-column: 1 / 2;
+  }
+
+  .menu__set-grid-two {
+    grid-row: 2;
+    grid-column: 2 / 3;
+  }
 }
 
 /* Menu display styles */
 
-.menu__item,
-.menu__set {
+.menu__picture {
   position: relative;
   z-index: -1;
-  margin-top: 1rem;
+  width: 18rem;
+  margin: 1rem auto;
+  text-align: center;
 }
 
 .menu__price {

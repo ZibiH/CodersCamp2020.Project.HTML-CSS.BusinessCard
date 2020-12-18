@@ -31,12 +31,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 1200px) {
-  body {
-    position: relative;
-  }
-}
-
 body::-webkit-scrollbar {
   width: .5rem;
   background-color: var(--primary-bg-color);
@@ -69,6 +63,7 @@ p,
   height: 3rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid var(--secondary-bg-color);
 }
 
@@ -251,7 +246,7 @@ footer p {
   padding: 0 1rem 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   footer p {
     font-size: .9rem;
   }
