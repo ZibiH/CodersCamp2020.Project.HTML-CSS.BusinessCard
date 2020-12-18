@@ -251,7 +251,6 @@ footer {
   max-height: 3rem;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   border-top: 2px solid var(--secondary-bg-color);
 }
 
