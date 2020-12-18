@@ -90,6 +90,9 @@ main {
 }
 
 @media (min-width: 992px) {
+  main {
+    width: 90%;
+  }
 
   .main-about {
     min-height: 6rem;
