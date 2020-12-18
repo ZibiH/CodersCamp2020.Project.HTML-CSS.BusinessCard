@@ -53,6 +53,7 @@ main h2 {
   .menu__item-grid-one {
     grid-area: mi1;
   }
+
   .menu__item-grid-two {
     grid-area: mi2;
   }
@@ -60,6 +61,7 @@ main h2 {
   .menu__item img {
     height: 25rem;
   }
+
   .menu__sets {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -83,7 +85,6 @@ main h2 {
 }
 
 /* Menu display styles */
-
 .menu__picture {
   position: relative;
   z-index: -1;

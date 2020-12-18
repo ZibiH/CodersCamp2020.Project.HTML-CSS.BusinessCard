@@ -20,12 +20,9 @@ main {
       "da da";
     gap: 1rem;
     }
-
 }
 
-
 /* Section styles */
-
 .main-about {
   grid-area: ab;
   min-height: 12rem;
@@ -40,7 +37,6 @@ main {
 
 .main-open__schedule-list-item {
   list-style: none;
-
 }
 
 .main-daily {
@@ -86,7 +82,6 @@ main {
   .main-daily {
     min-height: 16rem;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -105,5 +100,4 @@ main {
   .main-daily {
     min-height: 12rem;
   }
-
 }

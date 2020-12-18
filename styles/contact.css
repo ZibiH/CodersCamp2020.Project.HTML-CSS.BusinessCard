@@ -24,7 +24,6 @@ main {
 }
 
 /* Media query */
-
 @media (min-width: 992px) {
   main {
     min-height: 40vh;
@@ -44,7 +43,6 @@ main {
   .contact-form__description * {
     text-align: justify;
   }
-
 }
 
 /* Input styles */
@@ -71,11 +69,11 @@ main {
   width: 60%;
   max-width: 15rem;
 }
+
 .contact-form__message input {
   line-height: 1.3rem;
   width: 5rem;
 }
-
 
 .contact-form__name input[placeholder],
 .contact-form__email input[placeholder],
