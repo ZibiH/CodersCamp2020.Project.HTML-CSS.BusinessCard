@@ -183,7 +183,6 @@ aside ul {
 }
 
 aside li {
-  line-height: 2rem;
   margin-bottom: .6rem;
   list-style: none;
 }
@@ -227,6 +226,7 @@ aside li:active a i {
   aside {
     position: static;
     min-height: 3rem;
+    margin-top: 1rem;
   }
 
   aside ul {
