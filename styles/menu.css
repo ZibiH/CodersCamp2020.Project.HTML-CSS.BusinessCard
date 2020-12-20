@@ -27,6 +27,10 @@ main h2 {
   margin-top: 1rem;
 }
 
+.menu__container p {
+  font-weight: bold;
+}
+
 .menu__container img {
   width: 15rem;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, .3);
