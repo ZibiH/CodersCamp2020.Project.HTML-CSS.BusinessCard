@@ -3,12 +3,12 @@
 /* Variables and  root styles*/
 :root {
   font-size: 16px;
-  --primary-bg-color: #418EE6;
-  --primary-bg-color-rgba:rgba(65, 142, 230, .9);
-  --secondary-bg-color: #78FFAB;
-  --primary-text-color: #efebe9;
-  --secondary-text-color: #F58673;
-  --logo-color: #78FFAB;
+  --primary-bg-color: #E3DFC9;
+  --primary-bg-color-rgba:rgba(227, 223, 201, .9);
+  --secondary-bg-color:#995F33;
+  --primary-text-color: #4A452A;
+  --secondary-text-color: #112211;
+  --logo-color:#995F33;
   --header-margin-def: 1rem .5rem .5rem;
 }
 
@@ -96,7 +96,7 @@ p,
 
 .main-nav__link:hover a,
 .main-nav__link:active a {
-  color: var(--secondary-text-color);
+  color: var(--secondary-bg-color);
 }
 
 @media (min-width: 480px) {
