@@ -2,36 +2,35 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "ab ab"
+    "da da"
     "sh sh"
-    "da da";
-  width: 70vw;
-  min-height: 52rem;
-  margin: 0 auto;
+    "ab ab";
+  width: 70%;
+  min-height: 50rem;
+  margin: .5rem auto;
   justify-content: center;
   text-align: center;
 }
 
 @media (min-width: 992px) {
   main {
-    min-height: 40rem;
+    min-height: 25rem;
     grid-template-areas:
-      "ab sh"
-      "da da";
-    gap: 1rem;
+      "da sh"
+      "da ab";
     }
 }
 
 /* Section styles */
 .main-about {
   grid-area: ab;
-  min-height: 12rem;
+  min-height: 8rem;
   width: 100%;
 }
 
 .main-open {
   grid-area: sh;
-  min-height: 12rem;
+  min-height: 8rem;
   width: 100%;
 }
 
@@ -41,7 +40,7 @@ main {
 
 .main-daily {
   grid-area: da;
-  min-height: 24rem;
+  min-height: 20rem;
   width: 100%;
   overflow: hidden;
 }
@@ -87,14 +86,15 @@ main {
 @media (min-width: 992px) {
   main {
     width: 90%;
+    min-height: 20rem;
   }
 
   .main-about {
-    min-height: 6rem;
+    min-height: 5rem;
   }
 
   .main-open {
-    min-height: 6rem;
+    min-height: 5rem;
   }
 
   .main-daily {
