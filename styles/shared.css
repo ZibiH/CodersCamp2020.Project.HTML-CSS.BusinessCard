@@ -48,6 +48,7 @@ a,
 p,
 #site-logo a{
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 /* Main Navigation styles */
