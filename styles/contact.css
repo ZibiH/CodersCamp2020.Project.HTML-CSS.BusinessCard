@@ -66,8 +66,9 @@ main {
 .contact-form__name input,
 .contact-form__email input {
   line-height: 1.3rem;
-  width: 60%;
-  max-width: 15rem;
+  width: 70%;
+  min-width: 12rem;
+  max-width: 15.5rem;
 }
 
 .contact-form__message input {
@@ -78,5 +79,5 @@ main {
 .contact-form__name input[placeholder],
 .contact-form__email input[placeholder],
 .contact-form__message textarea[placeholder] {
-  padding-left: .5rem;
+  padding: .4rem .6rem;
 }
